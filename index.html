@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sorting Visualizer</title>
+	<link rel="shortcut icon" type="image/png" href="img/logo.png">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div id="heading">
+	<div>
+		<h1>Sorting Visualizer</h1>
+	</div>
+	<div class="hrule"></div>
+	<div id="nav-bar">
+
+	<div class="toolbox">
+		<button id="new" class="tools">New Array</button>
+
+		<span class="range tools">Size <input type="range" id="size" min=10 max=150 value=40>
+		</span>
+
+		<span class="range tools">Speed <input type="range" id="speed" min=1 max=10 value=3>
+		</span>
+
+<!--	<button id="bubble" class="tools">bubble Sort</button>
+		<button id="insertion" class="tools">insertion Sort</button>
+		<button id="selection" class="tools">selection Sort</button>
+		<button id="merge" class="tools">merge Sort</button>
+		<button id="quick" class="tools">quick Sort</button> -->
+
+		<select id="method" class="tools">
+			<option value="none">Choose Method</option>
+			<option value="bubble">Bubble Sort</option>
+			<option value="selection">Selection Sort</option>
+			<option value="insertion">Insertion Sort</option>
+			<option value="quick">Quick Sort</option>
+			<option value="merge">Merge Sort</option>
+		</select>
+
+		<button id="sort" class="tools">Sort</button>
+	</div>
+	<div class="hrule"></div>
+</div>
+<div id="bar"></div>
+</div>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/bubble.js"></script>
+<script type="text/javascript" src="js/selection.js"></script>
+<script type="text/javascript" src="js/insertion.js"></script>
+<script type="text/javascript" src="js/quick.js"></script>
+<script type="text/javascript" src="js/merge.js"></script>
+
+</body>
+</html>
